@@ -1,6 +1,8 @@
 <% @tutorials.each do |tutorial| %>
-<p><%= tutorial.language %></p>
-<p><%= tutorial.category %></p>
-<p><%= tutorial.difficulty %></p>
-<p><%= tutorial.link %></p>
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+<p>Language: <%= tutorial.language %></p>
+<p>Category: <%= tutorial.category %></p>
+<p>Difficulty: <%= tutorial.difficulty %></p>
+<p>Link: <%= tutorial.link %></p>
+</div>
 <% end %>

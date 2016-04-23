@@ -10,7 +10,7 @@ class TutorialsController < ApplicationController
 
   def create
     Tutorial.create(tutorial_params)
-    redirect_to 'index'
+    redirect_to tutorials_path
   end
 
   private
