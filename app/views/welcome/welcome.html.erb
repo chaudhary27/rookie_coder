@@ -1,0 +1,26 @@
+<h1> Welcome to rookie coder</h1>
+
+<%= form_tag(tutorials_path, method: "get") do %>
+  <div class="form-group">
+  <%= label_tag(:d, "What type of development are you interested in?") %>
+  <%= select_tag "development", "<option value='web'>Web Development</option><option value='game'>Game Development</option>
+                            <option value='mobile'>Mobile App Development</option><option value='graphics'>Graphics</option>
+                            <option value='image'>Image Processing</option>".html_safe, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+  <%= label_tag(:c, "Choose a language") %>
+  <%= select_tag "language", "<option value='java'>Java</option><option value='python'>Python</option>
+                            <option value='c++/c'>C++/C</option><option value='javascript'>JavaScript</option>
+                            <option value='html'>HTML/CSS</option>".html_safe, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+  <%= label_tag(:i, "What level do you identifiy yourself?") %>
+  <%= select_tag "level", "<option value='beginner'>Beginner</option><option value='inter'>Intermedia</option>
+                            <option value='expert'>Expert</option>".html_safe, class: "form-control" %>
+  </div>
+
+  <%= submit_tag "Submit" %>
+
+<% end %>
