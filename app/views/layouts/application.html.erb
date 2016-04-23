@@ -39,9 +39,47 @@
   <br class="clr" />
   <div id="footer">
     <div class="container">
-      <b>Footer Here</b>
-      <br />
-      <%= link_to 'Link', '#' %>
+      <div class="col-xs-12 col-sm-3">
+            <b>The Pros</b>
+            <br />
+            <%= link_to 'Create a tutorial', tutorials_path %>
+            <br />
+            <%= link_to 'My Dashboard', tutorials_path %>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <b>About</b>
+            <br />
+            <%= link_to 'Team', '#' %>
+            <br />
+            <%= link_to 'Careers', '#' %>
+            <br />
+            <%= link_to 'Privacy Policy', tutorials_path %>
+          </div>
+          <div class="col-xs-12 col-sm-3 social">
+            <b>Social</b>
+            <br />
+            <br />
+            <%= link_to 'https://github.com/chaudhary27/rookie_coder' do %>
+            <%= image_tag 'github.png', :class => 'social-button' %>
+            <% end %>
+
+            <%= link_to 'https://www.facebook.com' do %>
+            <%= image_tag 'facebook.png', :class => 'social-button' %>
+            <% end %>
+
+            <%= link_to 'https://twitter.com/ffarooq00' do %>
+            <%= image_tag 'twitter.png', :class => 'social-button' %>
+            <% end %>
+          </div>
+          <div class="col-xs-12 col-sm-3 social">
+            <b>Proudly built by Faisal and Dong</b><br />
+            <b>A QueensHack project</b>
+            <br />
+            <%= link_to 'https://queenshack.nyc/' do %>
+            <%= image_tag 'qnslogo.svg', :class => 'social-button' %>
+            <% end %>
+          </div>
+        </div>
     </div>
   </div>
 

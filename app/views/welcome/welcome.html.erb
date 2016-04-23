@@ -1,4 +1,44 @@
-<h1> Welcome to rookie coder</h1>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag 'slider1.jpeg', class: 'img-responsive' %>
+      <div class="carousel-caption">
+        Up your game - Kick off your coding journey with Rookie Coder
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag 'slider2.jpeg', class: 'img-responsive' %>
+      <div class="carousel-caption">
+        Learn the Lingua Franca of 21st century
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag 'slider3.jpeg', class: 'img-responsive' %>
+      <div class="carousel-caption">
+        You got this!
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+<h1>Choose your path to become a coder</h1>
 
 <%= form_tag(tutorials_path, method: "get") do %>
   <div class="form-group">
@@ -21,6 +61,6 @@
                             <option value='expert'>Expert</option>".html_safe, class: "form-control" %>
   </div>
 
-  <%= submit_tag "Submit" %>
+  <%= submit_tag "Submit", class: 'btn btn-primary' %>
 
 <% end %>
